@@ -1,0 +1,23 @@
+FileVersion = 1
+Dependencies = {corlib = "*", corlib = "*", corlib = "*"}
+
+[Project]
+Name = "FreeType"
+TargetType = "BeefLib"
+StartupObject = "Program"
+
+[Configs.Debug.Win32]
+LibPaths = ["$(ProjectDir)/dist/win32/freetype.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win32/*.dll\")"]
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/dist/win64/freetype.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win64/*.dll\")"]
+
+[Configs.Release.Win32]
+LibPaths = ["$(ProjectDir)/dist/win32/freetype.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win32/*.dll\")"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/dist/win64/freetype.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win64/*.dll\")"]

@@ -1,0 +1,1 @@
+freetype.dll and freetype.lib (32-bit) must be placed here!

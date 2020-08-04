@@ -1,0 +1,5 @@
+FileVersion = 1
+Projects = {FreeType = {Path = "."}}
+
+[Workspace]
+StartupProject = "FreeType"
